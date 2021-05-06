@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /*    This defines what 1 rem is */
+  /*with this now 10px = 1rem */
+  /* note that we could have used ems instead of rems but that is a whole lot of work, because it is difficult to make, because the ems depend not on the root font size but on the font size of the parent Element and with that you have to do a lot of calculations and it becomes really difficult to mange.  */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background: #264653; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a9d8f,
+    #264653
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a9d8f,
+    #264653
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  width: 75%;
+  margin: auto;
+  margin-top: 10rem;
+  text-align: center;
+  color: #e9c46a;
+  font-size: 4rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  font-size: 3rem;
+  background: #f4a261;
+  color: #2a2726;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5rem;
+  box-shadow: 2px 1px 3px 1px rgb(15, 15, 15);
+}
